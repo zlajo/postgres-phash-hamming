@@ -3,7 +3,10 @@
 #include <stdlib.h>
 #include <string.h>
 #include <utils/datum.h>
+
+#ifndef VARSIZE
 #include <varatt.h>
+#endif
 
 #if defined(_MSC_VER) || defined(__BORLANDC__)
 typedef unsigned __int64 ulong64;
